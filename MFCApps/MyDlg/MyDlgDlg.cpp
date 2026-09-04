@@ -13,8 +13,7 @@
 #endif
 
 
-CMyDlgDlg::CMyDlgDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_MYDLG_DIALOG, pParent)
+CMyDlgDlg::CMyDlgDlg(CWnd* pParent /*=nullptr*/) : CDialogEx(IDD_MYDLG_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
