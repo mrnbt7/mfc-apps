@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="BasicApp/BasicApp.vcxproj" Id="2cc95044-7100-41ee-b763-ea8d638ea409" />
+  <Project Path="CppApp/CppApp.vcxproj" Id="b0b5e863-3fa1-4270-a12b-02a00eef34b4" />
+  <Project Path="Win32App.vcxproj" Id="b65bca51-8833-4121-8fb2-e9ed25f8fcbd" />
+  <Project Path="WinDialog/WinDialog.vcxproj" Id="8d765c06-d1ee-4ac7-9953-8553ede8c37d" />
+</Solution>
