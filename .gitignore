@@ -2,6 +2,6 @@
 
 Win32App/.vs/Win32App.slnx/v18/
 Win32App/**/x64/
-Win32App/.vs/Win32App.slnx/FileContentIndex/2a179092-79c6-41a9-be64-19b2152d89a3.vsidx
+Win32App/.vs/Win32App.slnx
 /MFCApps/**/x64
-/MFCApps/MyDlg/.vs/MyDlg.slnx
+/MFCApps/MyDlg/.vs/
