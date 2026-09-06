@@ -209,8 +209,9 @@ This enables **Run-Time Class Information (RTTI)** inside the MFC file system. I
 | **Taskbar Footprint Allocation** | 1 icon per process | 1 icon per application | 1 icon per form panel | **1 unique icon per file window** |
 | **Ideal Architectural Target** | Focused tools (Notepad) | Complex suites (Photoshop) | Direct configurations | Collaborative software |
 
-## The most important visual difference
-    between these four architectures is the number of top-level frame windows and their relationship to the document and view objects. The following diagrams illustrate the structural relationships:
+## 7. The most important visual difference
+
+Between these four architectures is the number of top-level frame windows and their relationship to the document and view objects. The following diagrams illustrate the structural relationships:
 
 
 ---
