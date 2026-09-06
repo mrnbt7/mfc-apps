@@ -33,7 +33,7 @@ protected:
 
 // Generated message map functions
 protected:
-    
+	// 📜 Step 3 : Add the Function Declaration
 	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags); // 👈 Add this line
 	DECLARE_MESSAGE_MAP()
 };

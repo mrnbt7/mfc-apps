@@ -22,7 +22,7 @@
 IMPLEMENT_DYNCREATE(CMySDIView, CView)
 
 BEGIN_MESSAGE_MAP(CMySDIView, CView)
-	// Step 2: Hook up the Message Map (this is the "glue" that connects the key press to our function)
+	// 🗺️ Step 2: Hook up the Message Map (this is the "glue" that connects the key press to our function)
     ON_WM_CHAR() // 👈 Add this line if it isn't there already!
 END_MESSAGE_MAP()
 
@@ -63,7 +63,7 @@ CMySDIDoc* CMySDIView::GetDocument() const // non-debug version is inline
 }
 
 
-//  Step 1: Catch Key Presses in the View 
+// 🎹 Step 1: Catch Key Presses in the View 
 void CMySDIView::OnChar(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
     // 1. Get a pointer to the document
