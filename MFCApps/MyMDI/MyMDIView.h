@@ -7,35 +7,25 @@
 
 class CMyMDIView : public CView
 {
-protected: // create from serialization only
+
+public:
+	// Attributes
+	CMyMDIDoc* GetDocument() const;
+	virtual ~CMyMDIView();
+
+	// Overrides
+	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+	
+
+
+protected:
 	CMyMDIView() noexcept;
 	DECLARE_DYNCREATE(CMyMDIView)
 
-// Attributes
-public:
-	CMyMDIDoc* GetDocument() const;
-
-// Operations
-public:
-
-// Overrides
-public:
-	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
-	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
-protected:
-
-// Implementation
-public:
-	virtual ~CMyMDIView();
-#ifdef _DEBUG
-	virtual void AssertValid() const;
-	virtual void Dump(CDumpContext& dc) const;
-#endif
-
-protected:
-
-// Generated message map functions
-protected:
+	// Generated message map functions
+	// 📜 Step 3 : Add the Function Declaration
+	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags); // 👈 Add this line
 	DECLARE_MESSAGE_MAP()
 };
 

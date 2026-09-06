@@ -19,14 +19,11 @@ class CMyMDIApp : public CWinApp
 public:
 	CMyMDIApp() noexcept;
 
-
-// Overrides
-public:
+	// Overrides
 	virtual BOOL InitInstance();
 	virtual int ExitInstance();
 
-// Implementation
-	afx_msg void OnAppAbout();
+	// Generated message map functions
 	DECLARE_MESSAGE_MAP()
 };
 

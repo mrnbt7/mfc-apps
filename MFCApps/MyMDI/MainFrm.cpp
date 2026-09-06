@@ -28,8 +28,6 @@ static UINT indicators[] =
 	ID_INDICATOR_SCRL,
 };
 
-// CMainFrame construction/destruction
-
 CMainFrame::CMainFrame() noexcept
 {
 	// TODO: add member initialization code here
@@ -71,26 +69,8 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 {
 	if( !CMDIFrameWnd::PreCreateWindow(cs) )
 		return FALSE;
-	// TODO: Modify the Window class or styles here by modifying
-	//  the CREATESTRUCT cs
+	// TODO: Modify the Window class or styles here by modifying the CREATESTRUCT cs
 
 	return TRUE;
 }
-
-// CMainFrame diagnostics
-
-#ifdef _DEBUG
-void CMainFrame::AssertValid() const
-{
-	CMDIFrameWnd::AssertValid();
-}
-
-void CMainFrame::Dump(CDumpContext& dc) const
-{
-	CMDIFrameWnd::Dump(dc);
-}
-#endif //_DEBUG
-
-
-// CMainFrame message handlers
 
