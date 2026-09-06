@@ -17,8 +17,6 @@
 
 // CCalcAppDlg dialog
 
-
-
 CCalcAppDlg::CCalcAppDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_CALCAPP_DIALOG, pParent)
 {
