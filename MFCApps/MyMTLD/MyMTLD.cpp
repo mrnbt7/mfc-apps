@@ -20,7 +20,6 @@
 // CMyMTLDApp
 
 BEGIN_MESSAGE_MAP(CMyMTLDApp, CWinApp)
-	ON_COMMAND(ID_APP_ABOUT, &CMyMTLDApp::OnAppAbout)
 	ON_COMMAND(ID_FILE_NEW_FRAME, &CMyMTLDApp::OnFileNewFrame)
 	ON_COMMAND(ID_FILE_NEW, &CMyMTLDApp::OnFileNew)
 	// Standard file based document commands
@@ -29,7 +28,6 @@ BEGIN_MESSAGE_MAP(CMyMTLDApp, CWinApp)
 END_MESSAGE_MAP()
 
 
-// CMyMTLDApp construction
 
 CMyMTLDApp::CMyMTLDApp() noexcept
 {
@@ -43,7 +41,6 @@ CMyMTLDApp::CMyMTLDApp() noexcept
 }
 
 // The one and only CMyMTLDApp object
-
 CMyMTLDApp theApp;
 
 
@@ -56,15 +53,7 @@ BOOL CMyMTLDApp::InitInstance()
 
 	EnableTaskbarInteraction(FALSE);
 
-	// AfxInitRichEdit2() is required to use RichEdit control
-	// AfxInitRichEdit2();
-
-	// Standard initialization
-	// If you are not using these features and wish to reduce the size
-	// of your final executable, you should remove from the following
-	// the specific initialization routines you do not need
-	// Change the registry key under which our settings are stored
-	// TODO: You should modify this string to be something appropriate
+		// Standard initialization
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 	LoadStdProfileSettings(4);  // Load standard INI file options (including MRU)
@@ -89,8 +78,7 @@ BOOL CMyMTLDApp::InitInstance()
 	ParseCommandLine(cmdInfo);
 
 
-
-	// Dispatch commands specified on the command line.  Will return FALSE if
+		// Dispatch commands specified on the command line.  Will return FALSE if
 	// app was launched with /RegServer, /Register, /Unregserver or /Unregister.
 	if (!ProcessShellCommand(cmdInfo))
 		return FALSE;
@@ -102,49 +90,6 @@ BOOL CMyMTLDApp::InitInstance()
 }
 
 // CMyMTLDApp message handlers
-
-
-// CAboutDlg dialog used for App About
-
-class CAboutDlg : public CDialogEx
-{
-public:
-	CAboutDlg() noexcept;
-
-// Dialog Data
-#ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_ABOUTBOX };
-#endif
-
-protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-
-// Implementation
-protected:
-	DECLARE_MESSAGE_MAP()
-};
-
-CAboutDlg::CAboutDlg() noexcept : CDialogEx(IDD_ABOUTBOX)
-{
-}
-
-void CAboutDlg::DoDataExchange(CDataExchange* pDX)
-{
-	CDialogEx::DoDataExchange(pDX);
-}
-
-BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
-END_MESSAGE_MAP()
-
-// App command to run the dialog
-void CMyMTLDApp::OnAppAbout()
-{
-	CAboutDlg aboutDlg;
-	aboutDlg.DoModal();
-}
-
-// CMyMTLDApp message handlers
-
 void CMyMTLDApp::OnFileNewFrame()
 {
 	ASSERT(m_pDocTemplate != nullptr);
@@ -159,15 +104,12 @@ void CMyMTLDApp::OnFileNewFrame()
 
 	if (pDoc != nullptr)
 	{
-		// If creation worked, use create a new frame for
-		// that document.
+		// If creation worked, use create a new frame for that document.
 		pFrame = m_pDocTemplate->CreateNewFrame(pDoc, nullptr);
 		if (pFrame != nullptr)
 		{
-			// Set the title, and initialize the document.
-			// If document initialization fails, clean-up
+			// Set the title, and initialize the document. If document initialization fails, clean-up
 			// the frame window and document.
-
 			m_pDocTemplate->SetDefaultTitle(pDoc);
 			if (!pDoc->OnNewDocument())
 			{
@@ -182,9 +124,7 @@ void CMyMTLDApp::OnFileNewFrame()
 		}
 	}
 
-	// If we failed, clean up the document and show a
-	// message to the user.
-
+	// If we failed, clean up the document and show a message to the user.
 	if (pFrame == nullptr || pDoc == nullptr)
 	{
 		delete pDoc;

@@ -16,23 +16,20 @@
 
 class CMyMTLDApp : public CWinApp
 {
+
 public:
 	CMyMTLDApp() noexcept;
 
-protected:
-	CMultiDocTemplate* m_pDocTemplate;
-public:
-
-// Overrides
-public:
+	// Overrides
 	virtual BOOL InitInstance();
 
-
-// Implementation
-	afx_msg void OnAppAbout();
+    // Implementation
 	afx_msg void OnFileNewFrame();
 	afx_msg void OnFileNew();
 	DECLARE_MESSAGE_MAP()
+
+protected:
+	CMultiDocTemplate* m_pDocTemplate;
 };
 
 extern CMyMTLDApp theApp;

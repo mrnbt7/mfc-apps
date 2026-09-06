@@ -30,7 +30,6 @@ END_MESSAGE_MAP()
 CMyMTLDView::CMyMTLDView() noexcept
 {
 	// TODO: add construction code here
-
 }
 
 CMyMTLDView::~CMyMTLDView()
@@ -58,25 +57,9 @@ void CMyMTLDView::OnDraw(CDC* /*pDC*/)
 }
 
 
-// CMyMTLDView diagnostics
-
-#ifdef _DEBUG
-void CMyMTLDView::AssertValid() const
-{
-	CView::AssertValid();
-}
-
-void CMyMTLDView::Dump(CDumpContext& dc) const
-{
-	CView::Dump(dc);
-}
-
 CMyMTLDDoc* CMyMTLDView::GetDocument() const // non-debug version is inline
 {
 	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CMyMTLDDoc)));
 	return (CMyMTLDDoc*)m_pDocument;
 }
-#endif //_DEBUG
 
-
-// CMyMTLDView message handlers
