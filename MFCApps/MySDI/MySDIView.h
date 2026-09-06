@@ -27,15 +27,14 @@ protected:
 // Implementation
 public:
 	virtual ~CMySDIView();
-#ifdef _DEBUG
-	virtual void AssertValid() const;
-	virtual void Dump(CDumpContext& dc) const;
-#endif
+
 
 protected:
 
 // Generated message map functions
 protected:
+    
+	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags); // 👈 Add this line
 	DECLARE_MESSAGE_MAP()
 };
 

@@ -17,8 +17,6 @@
 #endif
 
 
-// CMySDIApp
-
 BEGIN_MESSAGE_MAP(CMySDIApp, CWinApp)
 	// Standard file based document commands
 	ON_COMMAND(ID_FILE_NEW, &CWinApp::OnFileNew)
@@ -40,29 +38,17 @@ CMySDIApp::CMySDIApp() noexcept
 }
 
 // The one and only CMySDIApp object
-
 CMySDIApp theApp;
 
 
 // CMySDIApp initialization
-
 BOOL CMySDIApp::InitInstance()
 {
 	CWinApp::InitInstance();
 
-
 	EnableTaskbarInteraction(FALSE);
 
-	// AfxInitRichEdit2() is required to use RichEdit control
-	// AfxInitRichEdit2();
-
 	// Standard initialization
-	// If you are not using these features and wish to reduce the size
-	// of your final executable, you should remove from the following
-	// the specific initialization routines you do not need
-	// Change the registry key under which our settings are stored
-	// TODO: You should modify this string to be something appropriate
-	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 	LoadStdProfileSettings(4);  // Load standard INI file options (including MRU)
 
@@ -85,7 +71,6 @@ BOOL CMySDIApp::InitInstance()
 	ParseCommandLine(cmdInfo);
 
 
-
 	// Dispatch commands specified on the command line.  Will return FALSE if
 	// app was launched with /RegServer, /Register, /Unregserver or /Unregister.
 	if (!ProcessShellCommand(cmdInfo))
@@ -97,10 +82,6 @@ BOOL CMySDIApp::InitInstance()
 	return TRUE;
 }
 
-// CMySDIApp message handlers
-
-
-// CMySDIApp message handlers
 
 
 
