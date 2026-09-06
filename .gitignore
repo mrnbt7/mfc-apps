@@ -1,9 +1,8 @@
 
 
-Win32App/.vs/Win32App.slnx/v18/
+Win32App/.vs/
 Win32App/**/x64/
-Win32App/.vs/Win32App.slnx
 /MFCApps/**/x64
-/MFCApps/MyDlg/.vs/
+/MFCApps/**/.vs/
 /MFCApps/.vs/
-/MFCApps/MySDIApp/.vs
+
