@@ -70,6 +70,9 @@ A **Dialog-Based** application completely bypasses the document-view layout, fil
 ### 4. Multiple Top-Level Documents
 This architecture is a modern hybrid framework that provides the user experience of an SDI workspace alongside the file management advantages of an MDI engine.
 
+NOTE: Navigate to Menu: File -> New Frame 
+to see the multiple frames 
+
 *   **Real-World Exemplars:** Modern Microsoft Word, modern web browsers like Google Chrome.
 *   **Internal Execution Mechanics:** Every document session initiates its own top-level window frame complete with an independent system taskbar icon. However, behind the scenes, all windows run within the memory boundaries of **one single background execution thread (`CWinApp`)**. This layout allows users to distribute multiple project views seamlessly across multiple physical displays.
 

@@ -5,4 +5,6 @@ Win32App/**/x64/
 /MFCApps/**/x64
 /MFCApps/**/.vs/
 /MFCApps/.vs/
+/**/**/.vs/
+/**/**/**/x64/
 

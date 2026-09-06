@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="Shared/Calc.h" />
+  </Folder>
+  <Project Path="CalcApp/CalcApp.vcxproj" />
+  <Project Path="MyCalcLib/MyCalcLib.vcxproj" />
+</Solution>
